@@ -90,7 +90,7 @@ fig_best = px.bar(
     title="Best Performing Product",
     labels={"order_item_count": "Number of Sales (Order Item)", "product_category_name_english": "Product Category"},
     color="order_item_count",
-    color_continuous_scale=["#72BF78"]
+    color_continuous_scale=["#72BF78", "#72BF78"]  # Pastikan ada dua warna
 )
 fig_best.update_layout(yaxis={'categoryorder':'total ascending'})
 
@@ -104,7 +104,7 @@ fig_worst = px.bar(
     title="Worst Performing Product",
     labels={"order_item_count": "Number of Sales (Order Item)", "product_category_name_english": "Product Category"},
     color="order_item_count",
-    color_continuous_scale=["#72BF78"]
+    color_continuous_scale=["#72BF78", "#72BF78"]  # Pastikan ada dua warna
 )
 fig_worst.update_layout(yaxis={'categoryorder':'total descending'})
 
