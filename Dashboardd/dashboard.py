@@ -59,7 +59,7 @@ filtered_orders = orders_df[
 
 # Inisialisasi modul analisis dan peta geospasial
 analytics = AnalyticsTool(filtered_orders)
-geo_plotter = BrazilGeospatial(geo_data, None, None, urllib, st)
+geo_plotter = BrazilGeospatial(geo_data, st)
 
 # Buat data ringkasan dari berbagai fungsi analitik
 order_items_summary = analytics.create_sum_order_items_df()
