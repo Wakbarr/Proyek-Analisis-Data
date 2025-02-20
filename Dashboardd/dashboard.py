@@ -5,7 +5,7 @@ import matplotlib.image as mpimg
 import plotly.express as px
 from function import AnalyticsTool, BrazilGeospatial
 
-# Atur gaya Streamlit
+# Atur konfigurasi halaman Streamlit
 st.set_page_config(layout="wide")
 
 # Memuat dataset pesanan dan data geolokasi
@@ -158,7 +158,7 @@ with col3:
 with col4:
     st.plotly_chart(fig_pie, use_container_width=True)
 
-# Tampilkan peta interaktif jika modul peta tersedia
+# Tampilkan peta interaktif (jika modul peta sudah diimplementasikan)
 st.subheader("Customer Geolocation")
 st.write("Klik pada peta untuk melihat informasi geospasial pelanggan.")
 geo_plotter.plot()
