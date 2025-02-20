@@ -1,3 +1,6 @@
+import pandas as pd
+import plotly.express as px
+
 class AnalyticsTool:
     def __init__(self, df):
         self.df = df
@@ -63,7 +66,6 @@ class AnalyticsTool:
         rfm_df["recency"] = rfm_df["max_order_timestamp"].apply(lambda x: (recent_date - x).days)
         rfm_df.drop("max_order_timestamp", axis=1, inplace=True)
         return rfm_df
-import plotly.express as px
 
 class BrazilGeospatial:
     def __init__(self, data, st):
